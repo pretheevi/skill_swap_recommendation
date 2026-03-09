@@ -1,7 +1,12 @@
 fastapi
 uvicorn
-pandas
 numpy
+pandas
 scikit-learn
-apscheduler
+scipy
 implicit
+python-dotenv
+libsql-experimental
+requests
+bcrypt
+faker
