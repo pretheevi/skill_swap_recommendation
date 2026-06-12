@@ -10,6 +10,10 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
+@app.get("/")
+async def health():
+    return {"status": "ok", "service": "skill-swap-ml"}
+    
 @app.post("/reload-model")
 async def reload_model():
     await load_model()
